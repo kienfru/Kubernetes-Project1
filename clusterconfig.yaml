@@ -5,7 +5,7 @@ metadata:
   name: k8s-slave # Replace this with your desired cluster name
   region: us-east-1 # replace this with your region
   tags:
-    project: clinton
+    project: magdalen
 
 nodeGroups:
   - name: workers-node
