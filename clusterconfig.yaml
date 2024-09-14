@@ -2,14 +2,14 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: k8s-slave # Replace this with your desired cluster name
+  name: k8s-cluster1 # Replace this with your desired cluster name
   region: us-east-1 # replace this with your region
   tags:
     project: magdalen
 
 nodeGroups:
   - name: workers-node
-    instanceType: t2.large #replace this with your desired instance types for the nodes
+    instanceType: t2.micro #replace this with your desired instance types for the nodes
     desiredCapacity: 3
     minSize: 2
     maxSize: 5
