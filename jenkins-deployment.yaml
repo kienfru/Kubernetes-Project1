@@ -14,13 +14,13 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: achaclinton/jenkins-terraform:my-jenkins-terraform # Replace this with your image name
+        image: kienche/my-jenkins-with-terraform:my-jenkins-terraform
         ports:
         - containerPort: 8080
         volumeMounts:
         - name: jenkins-home
           mountPath: /var/jenkins_home
       - name: jenkins1
-        image: achaclinton/jenkins-terraform:jenkins-terraform
+        image: kienche/my-jenkins-with-terraform:my-jenkins-terraform
       volumes:
       - name: jenkins-home
